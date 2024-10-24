@@ -38,6 +38,7 @@ public class Main
 				int posizione = scanner.nextInt();
 				seriea.rimuoviSquadrapiacere(posizione);
 				break;
+				case 6 :
 			
 				default:
 					break;
