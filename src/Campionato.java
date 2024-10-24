@@ -66,11 +66,13 @@ public class Campionato{
         squadrePresenti = squadrePresenti -1;
     }
     public void modificaSquadra(int posizione){
+	  
+	    
             if(posizione< 0 || posizione> TOTALE_SQUADRE-1){
             System.out.println("Attenzione: posizione invalida");
             return;
         }
-	String squadranuova;
+	  String squadranuova = scanner.nextline();
 	teams[posizione]=null;
         teams[posizione]=squadranuova;
         for(int i = posizione + 1;i<teams.length;i++){
