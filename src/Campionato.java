@@ -65,5 +65,20 @@ public class Campionato{
         teams[TOTALE_SQUADRE-1] = null;
         squadrePresenti = squadrePresenti -1;
     }
+    public void modificaSquadra(int posizione){
+            if(posizione< 0 || posizione> TOTALE_SQUADRE-1){
+            System.out.println("Attenzione: posizione invalida");
+            return;
+        }
+	String squadranuova;
+	teams[posizione]=null;
+        teams[posizione]=squadranuova;
+        for(int i = posizione + 1;i<teams.length;i++){
+            teams[i-1]=teams[i];
+        }
+        teams[TOTALE_SQUADRE-1] = null;
+        squadrePresenti = squadrePresenti -1;
+    }
+    }
     
 }
